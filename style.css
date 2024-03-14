@@ -8,19 +8,19 @@
 }
 
 body {
-     /* max-width: 1440px; */
-     overflow: hidden;
+    /* min-width: 375px; */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     }
 
 .main {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;    
     background-color: #202733;
     font-family: manrope;
-    padding: 223px 450px 255px;
+    padding: 120px 16px 232px;
 }
 
 .container {
@@ -32,8 +32,8 @@ body {
     padding: 48px 48px 79px;
     display: flex;
     background-color: #313a48;
-    width: 540px;
-    height: 332px;
+    width: 343px;
+    height: 315px;
     border-radius: 15px;
     box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.1);
     font-weight: 800;
@@ -45,26 +45,29 @@ body {
 }
 
 .adviceId, .advice {
-    font-size: 13px;
+    font-size: 11px;
     color: #53ffaa;
     letter-spacing: 4.09px;
 }
 
 .adviceText {
-    width: 444px;
-    font-size: 28px;
     color: #cee3e9;
     letter-spacing: -0.3px;
     margin-top: 24px;
+    width: 295px;
+    font-size: 24px;
 }
 
 .mobile {
-display: none;
+    display: block;
+    position: absolute;
+    bottom: 50px;
 }
 
 .desktop {
+    display: none;
     position: absolute;
-    bottom: 20%;
+    
 }
 
 .btn {
@@ -87,36 +90,33 @@ display: none;
     box-shadow: 0 0 40px 0 #53ffaa;
 }
 
-@media (max-width: 376px) {
+@media screen and (min-width: 1440px) {
     .mobile {
-        position: absolute;
-        display: block;
-        bottom: 50px;
+        display: none;
+        
     }
 
     .desktop {
-        display: none;
+        display: block;
+        bottom: 20%;
     }
-    body {
-        width: 375px;
-    }
+   
 
-    .main {
-        width: 375px;
-        padding: 120px 16px 232px;
+    .main { 
+        padding: 223px 450px 255px;
     }
 
     .container {
-        width: 343px;
-        height: 315px;
+        width: 540px;
+        height: 332px;
     }
 
     .adviceText {
-        width: 295px;
-        font-size: 24px;
+        width: 444px;
+        font-size: 28px;
     }
 
     .adviceId {
-        font-size: 11px;
+        font-size: 13px;
     }
 }
