@@ -8,7 +8,7 @@
 }
 
 body {
-     max-width: 1440px;
+     /* max-width: 1440px; */
      overflow: hidden;
     }
 
@@ -87,7 +87,7 @@ display: none;
     box-shadow: 0 0 40px 0 #53ffaa;
 }
 
-@media screen and (max-width: 374px) {
+@media (max-width: 376px) {
     .mobile {
         position: absolute;
         display: block;
@@ -97,8 +97,12 @@ display: none;
     .desktop {
         display: none;
     }
+    body {
+        width: 375px;
+    }
 
     .main {
+        width: 375px;
         padding: 120px 16px 232px;
     }
 
