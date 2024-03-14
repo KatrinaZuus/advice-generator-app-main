@@ -87,7 +87,7 @@ display: none;
     box-shadow: 0 0 40px 0 #53ffaa;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
     .mobile {
         position: absolute;
         display: block;
