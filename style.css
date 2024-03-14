@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     max-width: 1440px;
+     overflow: hidden;
+    }
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #202733;
+    font-family: manrope;
+    padding: 223px 450px 255px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 48px 48px 79px;
+    display: flex;
+    background-color: #313a48;
+    width: 540px;
+    height: 332px;
+    border-radius: 15px;
+    box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    text-align: center;
+}
+
+.adviceTitle {
+    display: flex;
+}
+
+.adviceId, .advice {
+    font-size: 13px;
+    color: #53ffaa;
+    letter-spacing: 4.09px;
+}
+
+.adviceText {
+    width: 444px;
+    font-size: 28px;
+    color: #cee3e9;
+    letter-spacing: -0.3px;
+    margin-top: 24px;
+}
+
+.mobile {
+display: none;
+}
+
+.desktop {
+    position: absolute;
+    bottom: 20%;
+}
+
+.btn {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    top: 100%;
+    transform: translateY(-50%);
+    background-color: #53ffaa;
+} 
+
+.btn svg {
+    transform: translateY(13%);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 40px 0 #53ffaa;
+}
+
+@media screen and (max-width: 376px) {
+    .mobile {
+        position: absolute;
+        display: block;
+        bottom: 50px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .main {
+        padding: 120px 16px 232px;
+    }
+
+    .container {
+        width: 343px;
+        height: 315px;
+    }
+
+    .adviceText {
+        width: 295px;
+        font-size: 24px;
+    }
+
+    .adviceId {
+        font-size: 11px;
+    }
+}
